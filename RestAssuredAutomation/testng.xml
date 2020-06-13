@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="test1" parallel="none" >
+<listeners>
+	<listener class-name = "com.mastercard.mdcc.commonUtil.Listeners" />
+</listeners>
+  <test name="Test One">
+    <classes>
+      <class name="dataDrivenTesting.DataDriven_AddNewEmp" />
+      <class name="com.mastercard.mdcc.employee.testcases.TC001_Get_All_Employees" />
+      <class name="com.mastercard.mdcc.employee.testcases.TC003_POST_EmployeeRecord" />
+      <class name="com.mastercard.mdcc.employee.testcases.TC004_PUT_EmployeeRecord" />
+      <class name="com.mastercard.mdcc.employee.testcases.TC005_Delet_EmployeeRecord" />
+    </classes>
+  </test>
+</suite>
